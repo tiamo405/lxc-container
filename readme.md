@@ -2,6 +2,10 @@
 * đây là cách tạo các máy ảo hóa trên ubuntu
 * mỗi container có thể có 1 ip riêng để ssh
 * Công cụ: LXD
+* LXD là daemon/service – tức là hệ thống quản lý container phía sau (giống như Docker Engine).
+lxc là command-line client (CLI) để tương tác với LXD.
+* Nói ngắn gọn:
+🧠 LXD là cái đầu não, còn lxc là cái tay để điều khiển nó.
 # Install
 ## Bước 1: Gỡ bản cũ (nếu có)
 ```
