@@ -1,0 +1,17 @@
+#cloud-config
+users:
+  - name: namtp
+    gecos: "Nam TP"
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDpuyMirjXSWdlE4oe68EgqfrLg5gX5lCTB2vpBXV72r/7qRWDeqi/55lLE8/bxV9TZl4V5EMD6Ef3AS+SUNmDza02/Aezlyl/kP7WV1WQY0HEQRMamVJ+5U7r5vkzpAY1D7KqcKAVik+J4SOalyl3NFU2c0FrKYomgRgo/Nlf9M3xsCEZGupk1dmF+FUdF0d/I+T4X9/0njyx3tMNdRMZmxd8pkvfIarzTAornxnebY735m9wCYGNajFjhf6C4MCtdw58IkVX397ULytvyTGSts0UzeDTNr6oqu5UJpyiBnv5d0oZ2LQ6ygbfmOR8nO7UE4aUg4/PH6vuSqIuinPgP2clh79aN8gbEv9x0hzjS66VDaSjVbHKdPVkY+/GMcxvDWjHcgDrGsIwkXEJzZa/xjR83HBEKijkxTKNOPjaCUDtc8Y6cRxLKCPgnvkj5s4pNdNvb1MxcYa/gSgPf9bjKmidHr7oSi/6YUncKHLtD0H1FyXbf59eT5cuPQeNgWTE= namtp@namtp
+
+hostname: server-dev
+package_update: true
+package_upgrade: true
+system_info:
+  default_user:
+    name: namtp
+    shell: /bin/bash
