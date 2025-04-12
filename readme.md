@@ -67,3 +67,13 @@ run file bash.sh (file config se tu khoi tao q user và add ssh-key máy A vào 
 ```
 bash create-new-container.sh
 ```
+
+# Các lệnh liên quan
+* Xóa container cũ nếu còn
+```sh
+lxc delete u2204-test-config --force
+```
+* show container
+```sh
+lxc list
+```
