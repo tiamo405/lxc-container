@@ -77,3 +77,7 @@ lxc delete u2204-test-config --force
 ```sh
 lxc list
 ```
+* exec
+```sh
+lxc exec name-container -- bash
+```
