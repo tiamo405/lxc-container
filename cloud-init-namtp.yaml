@@ -5,13 +5,19 @@ users:
     sudo: ALL=(ALL) NOPASSWD:ALL
     groups: users, admin
     shell: /bin/bash
+    # # Thêm mật khẩu cho user namtp (có thể dùng lệnh 'openssl passwd -1 "password"')
+    # password: $1$LxhY41Sw$EMoGXRfmYNEyPqLfK9Dwr.
+    # ssh_pwauth: true    # Cho phép đăng nhập SSH bằng mật khẩu
     ssh_authorized_keys:
+      # - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCZOVEEmvC3kVORVx6j6/CP9Q6yCF72SZhvnf5r4QUgP3bNlwQKeQ62OKhqfFMK17TChY2q3gMIWexduEtISXs3VcI4xg5DMm/IJzKblJlOkADY5i5FxKcYpa/gMYzEgPurE0jT0Gpi2RA6jTJMDsl4wZ0jQRVX+vYL55QG7P4M7SBnEIEvS6nv8L0+62yWxRZxwrbL9nuOAlze4Q4rdQqmGDbSrQlH8+69rhIo1yd8X2S9a72wpFkAUR3HLanPYvZGYPhOAB+PO+vFZFCl7FHVCTGZ05kp9it1IlCQkfmOvJR2IZSKvJFRpYTpc1asaarCmgaURtjCmMalJy+Y0nAssGjM3ICei+GwM3BrwRWuw41/8b60x0FstJVU1+aaL5wxboku/DcskqDBQn+jyr8i85QCg1jXDJV9yF2YaGj26I7P9+haASdwxPMG5JJ+zxr9daPpk1F9QrA6XNHwn43yQZxSMVrsFDpt6L5WNR2efzU3DkexjH+lcGreTj7m1g0= namtp@namtp-Lenovo-V14-G4-IRU
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDpuyMirjXSWdlE4oe68EgqfrLg5gX5lCTB2vpBXV72r/7qRWDeqi/55lLE8/bxV9TZl4V5EMD6Ef3AS+SUNmDza02/Aezlyl/kP7WV1WQY0HEQRMamVJ+5U7r5vkzpAY1D7KqcKAVik+J4SOalyl3NFU2c0FrKYomgRgo/Nlf9M3xsCEZGupk1dmF+FUdF0d/I+T4X9/0njyx3tMNdRMZmxd8pkvfIarzTAornxnebY735m9wCYGNajFjhf6C4MCtdw58IkVX397ULytvyTGSts0UzeDTNr6oqu5UJpyiBnv5d0oZ2LQ6ygbfmOR8nO7UE4aUg4/PH6vuSqIuinPgP2clh79aN8gbEv9x0hzjS66VDaSjVbHKdPVkY+/GMcxvDWjHcgDrGsIwkXEJzZa/xjR83HBEKijkxTKNOPjaCUDtc8Y6cRxLKCPgnvkj5s4pNdNvb1MxcYa/gSgPf9bjKmidHr7oSi/6YUncKHLtD0H1FyXbf59eT5cuPQeNgWTE= namtp@namtp
 
-hostname: server-dev-lxc
+
+hostname: docker-service-test
 package_update: true
 package_upgrade: true
 system_info:
   default_user:
     name: namtp
     shell: /bin/bash
+
